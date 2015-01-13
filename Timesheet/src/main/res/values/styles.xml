@@ -7,11 +7,39 @@
         <item name="android:textColorPrimary">@color/primary_text_color</item>
         <item name="android:windowBackground">@color/primary_background</item>
         <item name="android:navigationBarColor">@color/primary_background</item>
-        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearanceLargePopupMenuStyle</item>
     </style>
 
-    <style name="ActionBarStyle" parent="android:Theme.AppCompat.Light">
-        <item name="android:popupMenuStyle">@android:style/Widget.Holo.Light.PopupMenu</item>
+    <style name="TextAppearanceLargePopupMenuStyle" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large">
+        <item name="android:textColor">@color/popup_menu_text_color</item>
+    </style>
+
+    <style name="CalendarPickerViewStyle">
+        <item name="android:background">@color/primary_background</item>
+        <item name="dividerColor">@color/calendar_divider</item>
+        <item name="dayBackground">@drawable/calendar_day_bg_selector</item>
+        <item name="dayTextColor">@drawable/calendar_day_text_color_selector</item>
+        <item name="titleTextColor">@color/calendar_text</item>
+        <item name="headerTextColor">@color/calendar_inactive_text</item>
+    </style>
+
+    <style name="CalendarTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="CalendarCell.DayHeader">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="CalendarCell.CalendarDate">
+        <item name="android:textSize">18sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
 </resources>

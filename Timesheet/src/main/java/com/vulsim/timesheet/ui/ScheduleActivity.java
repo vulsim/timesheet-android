@@ -1,4 +1,4 @@
-package com.vulsim.timesheet;
+package com.vulsim.timesheet.ui;
 
 import android.app.Activity;
 import android.app.ActionBar;
@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
+import com.vulsim.timesheet.R;
+
 
 public class ScheduleActivity extends ActionBarActivity {
 
@@ -20,10 +22,9 @@ public class ScheduleActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule);
         if (savedInstanceState == null) {
-            getFragmentManager().beginTransaction().add(R.id.container, new PlaceholderFragment()).commit();
+            getFragmentManager().beginTransaction().add(R.id.container, new ScheduleCalendarFragment()).commit();
         }
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

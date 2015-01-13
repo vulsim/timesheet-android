@@ -1,7 +1,22 @@
 <resources>
-    <color name="accent">#e040fb</color>
-    <color name="primary">#2196f3</color>
-    <color name="primary_dark">#0d47a1</color>
-    <color name="primary_background">#ececec</color>
+    <color name="accent">#ff5a5f</color>
+    <color name="primary">#673ab7</color>
+    <color name="primary_dark">#311b92</color>
+    <color name="primary_background">#f6f6f5</color>
     <color name="primary_text_color">@android:color/white</color>
-</resources>
+
+    <color name="popup_menu_text_color">#565a5c</color>
+
+    <color name="calendar_day_bg">@android:color/transparent</color>
+    <color name="calendar_today_day_bg">#abacab</color>
+    <color name="calendar_inactive_day_bg">@android:color/transparent</color>
+    <color name="calendar_selected_day_bg">@color/accent</color>
+    <color name="calendar_highlighted_day_bg">#e7e8e7</color>
+
+    <color name="calendar_divider">#bec0c2</color>
+    <color name="calendar_text">#565a5c</color>
+    <color name="calendar_today_text">@android:color/white</color>
+    <color name="calendar_inactive_text">#bdbfc1</color>
+    <color name="calendar_selected_text">@android:color/white</color>
+    <color name="calendar_highlighted_text">@color/calendar_text</color>
+    </resources>
