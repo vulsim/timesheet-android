@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.parse.ParseObject;
 import com.squareup.timessquare.CalendarPickerView;
 import com.vulsim.timesheet.R;
 
@@ -42,12 +43,15 @@ public class ScheduleCalendarFragment extends Fragment {
         calendar.setOnDateSelectedListener(new CalendarPickerView.OnDateSelectedListener() {
             @Override
             public void onDateSelected(Date date) {
+                ParseObject testObject = new ParseObject("TestObject");
+                testObject.put("foo", "bar");
+                testObject.saveInBackground();
                 Toast.makeText(getActivity(), "Sample toast 1", Toast.LENGTH_LONG).show();
             }
 
             @Override
             public void onDateUnselected(Date date) {
-                Toast.makeText(getActivity(), "Sample toast 2", Toast.LENGTH_LONG).show();
+
             }
         });
 
